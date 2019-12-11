@@ -9,34 +9,42 @@
 </head>
 
 <body>
- 
-     <!-- //Forms for user input -->
+
+    <!-- //Forms for user input -->
     <!-- //things we need to complete need to be able tro save to local storage  -->
-    <!-- //search button needs to be set up with on click listener and doesn't refresh page --> 
-    <!-- //load api's to html --> 
-    <form>
+    <!-- //search button needs to be set up with on click listener and doesn't refresh page -->
+    <!-- //load api's to html -->
+    <form class="CityWeather">
         Search For Weather By City:<br>
         <input type="text">
     </form>
-    <button class = "Weather">Search</button>
+    <button class="Weather">Search</button>
     <br>
     <form>
         Search For Activities By City:<br>
         <input type="text">
 
-        <!-- api key for "Google Maps 'Things To Do'" -->
+        <!-- api key for "Google Maps 'Things To Do'" Adding created error in code-->
 
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDULeBEcgoC6Tk5tEvcNxnP1onNT5Wfz5Q&callback=initMap"
-        type="text/javascript"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDULeBEcgoC6Tk5tEvcNxnP1onNT5Wfz5Q&callback=initMap"
+            type="text/javascript"></script>
     </form>
-    <button class = "Activities">Search</button>
+    <button class="Activities">Search</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
 
+        //Weather Search button listener
 
-    
-</script>
+        $(".Weather").on("click", function () {
+            let APIKey = "27c1cb8e958edefa8e76e521738fbd32";
+            let queryURL = "api.openweathermap.org/data/2.5/forecast?q=" + "CityWeather" + "&appid=" + APIKey;
+        });
+
+
+    </script>
+
 </body>
 
 </html>
