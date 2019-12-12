@@ -10,38 +10,59 @@
 
 <body>
 
-    <!-- //Forms for user input -->
+    <!-- //Forms for user input 'done'-->
     <!-- //things we need to complete need to be able tro save to local storage  -->
     <!-- //search button needs to be set up with on click listener and doesn't refresh page -->
     <!-- //load api's to html -->
-    <form class="CityWeather">
+    <form id="CityWeather">
         Search For Weather By City:<br>
-        <input type="text">
+        <input id="City" type="text">
+
+        <button class="Weather">Search</button>
     </form>
-    <button class="Weather">Search</button>
+
     <br>
-    <form>
+    <form id="Activities">
         Search For Activities By City:<br>
-        <input type="text">
+        <input id="attraction" type="text">
 
-        <!-- api key for "Google Maps 'Things To Do'" Adding created error in code-->
-        <!-- tested and received error message "google maps not activated" do we have to pay for it ?-->
 
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDULeBEcgoC6Tk5tEvcNxnP1onNT5Wfz5Q&callback=initMap"
-            type="text/javascript"></script>
+        <button class="Activities">Search</button>
     </form>
-    <button class="Activities">Search</button>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
 
         //Weather Search button listener
 
-        $(".Weather").on("click", function () {
+        $("#CityWeather").on("submit", function (event) {
+            //console.log(event)
+            event.preventDefault();
+            let city = $("#City").val();
+            console.log(city)
             let APIKey = "27c1cb8e958edefa8e76e521738fbd32";
-            let queryURL = "api.openweathermap.org/data/2.5/forecast?q=" + "CityWeather" + "&appid=" + APIKey;
+            let queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey +"&units=imperial";
+
+            //console.log(response)
+            // this code sends our ajax requests and sets our promise
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            }).then(function (response) {
+                console.log(response);
+                // this line is creating a DIV variable
+                let weatherDiv = $("<div>");
+                let p = $("<p>").text("Temperature: " + response.list[0].main.temp);
+            
+                weatherDiv.append(p);
+                $("body").append(weatherDiv);
+            }
+
+            )
         });
+
+        //This is where the information response will appear
 
 
     </script>
