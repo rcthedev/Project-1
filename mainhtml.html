@@ -62,7 +62,33 @@
             )
         });
 
-        //This is where the information response will appear
+        $("#Activities").on("submit", function (event) {
+            //console.log(event)
+            event.preventDefault();
+            let city = $("#City").val();
+            console.log(city)
+            let APIKey = "";
+            let queryURL = "" + city + "&appid=" + APIKey ;
+
+      
+            // this code sends our ajax requests and sets our promise
+            $.ajax({
+                url: queryURL,
+                method: "GET"
+            }).then(function (response) {
+                console.log(response);
+                // this line is creating a DIV variable
+                let activityDiv = $("<div>");
+                let p = $("<p>").text("Attractions: " + );
+            
+                activityDiv.append(p);
+                $("body").append(activityDiv);
+            }
+
+            )
+        });
+
+       
 
 
     </script>
