@@ -62,9 +62,9 @@
             )
         });
 
-        $("#Activities").on("submit", function (event) {
-            //console.log(event)
-            event.preventDefault();
+        $("#Activities").on("submit", function (active) {
+            console.log(active)
+            active.preventDefault();
             let city = $("#attraction").val();
             console.log(city)
             let queryURL = "https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&city=*" + city ;
@@ -78,7 +78,7 @@
                 console.log(response);
                 // this line is creating a DIV variable
                 let activityDiv = $("<div>");
-                let p = $("<p>").text("Attractions:" + 0);
+                let p = $("<p>").text("Attractions:"+ response._embedded.events[0]);
             
                 activityDiv.append(p);
                 $("body").append(activityDiv);
