@@ -78,9 +78,11 @@
                 console.log(response);
                 // this line is creating a DIV variable
                 let activityDiv = $("<div>");
-                let p = $("<p>").text("Attractions:"+ response._embedded.events[0]);
+                let p = $("<p>").text("Attractions:"+ response._embedded.events[0].name);
+                let p2 = $("<p>").text( response._embedded.events[0].url);
             
                 activityDiv.append(p);
+                activityDiv.append(p2);
                 $("body").append(activityDiv);
             }
 
