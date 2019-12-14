@@ -65,10 +65,9 @@
         $("#Activities").on("submit", function (event) {
             //console.log(event)
             event.preventDefault();
-            let city = $("#City").val();
+            let city = $("#attraction").val();
             console.log(city)
-            let APIKey = "";
-            let queryURL = "" + city + "&appid=" + APIKey ;
+            let queryURL = "https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&city=*" + city ;
 
       
             // this code sends our ajax requests and sets our promise
