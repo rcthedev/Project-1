@@ -58,5 +58,5 @@ footer.page-footer {
 
 .citySearch {
   font-weight: bold;
-  
+  col s6 push-s3;
 }

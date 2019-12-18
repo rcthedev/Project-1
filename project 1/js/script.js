@@ -18,7 +18,7 @@ $("input").keypress(function(event) {
 });
 
 function searchcity () {
-    
+    // this abstracts the function so it can be called from both enter key and search button
         ///console.log(active)
         // active.preventDefault();
         let city = $("#attraction").val();
