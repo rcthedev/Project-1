@@ -74,6 +74,8 @@ function searchcity () {
 
 $("#searchButton").on("click", function (event) { event.preventDefault; searchcity () });
 
+ src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js";
+
 
 
 

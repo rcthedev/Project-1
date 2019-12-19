@@ -60,3 +60,53 @@ footer.page-footer {
   font-weight: bold;
   col s6 push-s3;
 }
+h2 {
+  color: teal;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: blue;
+}
+
+
+main {
+  width: 960px;
+  margin: auto;
+  padding: 0 0 10% 0;
+}
+.name {
+  display: block;
+  padding: 20px;
+  background-color: teal;
+  color: white;
+  position: relative;
+  width: 300px;
+  margin-left: 260px;
+  
+}
+.box {
+  display: inline-block;
+  width: 30%;
+}
+.space {
+  width: 20px;
+}
