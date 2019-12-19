@@ -87,13 +87,10 @@ function searchcity () {
         method: "GET"
     }).then(function (response) {
         console.log(response);
-        let weatherDiv = $(".weather");
-    let p = $("<p>").text("Temperature: " + response.list[0].main.temp);
-    let p3 = $("<p>").text(response.city.name);
+        //let weatherDiv = $(".weather");
 
-
-    weatherDiv.append(p);
-    weatherDiv.append(p3);
+    $(".head").text(response.city.name);
+    $(".head2").text("Temperature: " + response.list[0].main.temp);
 
     
 }
