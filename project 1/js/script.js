@@ -11,8 +11,11 @@ $(document).ready(function () {
 
 $("#searchButton").on("submit", function (event) {
     //console.log(event)
+    
 
 });
+
+
 $("input").keypress(function(event) {
    
     if (event.which == 13) {
@@ -43,12 +46,8 @@ function searchcity () {
         let carousel = $("<div>")
         .addClass("carousel");
         
-        let activityDiv = $("<div>");
-       // let newResponse= response._embedded.events.map(function(a){
-            //if (a.name)
        
         for (i = 0; i < 5; i++) {
-            //console.log(city);
             let a= $("<a>");
             a.addClass("carousel-item").attr("href", response._embedded.events[i].url);
             let img = $("<img>").attr("src", response._embedded.events[i].images[1].url)
@@ -60,20 +59,25 @@ function searchcity () {
 
 
             
-            let p = $("<p>").text("Attractions:" + response._embedded.events[i].name);
-            //let p2 = $("<p>").text(response._embedded.events[i].url);
-            activityDiv.append(p);
-           // activityDiv.append(p2);
+            let p = $("<p>").text(response._embedded.events[i].name);
+            let p2 = $("<p>").text(response._embedded.events[i].dates.start.dateTime);
+            a.append(p);
+            a.append(p2);
             a.append(img);
             carousel.append(a);
             $(".carouselTxt").append(p);
 
-
+            /**
+             * <div>
+             * <a><img/></a>
+             * </div>
+             */
+            
         }
         $("#carouselTkt").append(carousel);
         $('.carousel').carousel();
-       // $("carousel").append(activityDiv);
-        console.log(activityDiv)
+        
+   
       //  <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
     }
 

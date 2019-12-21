@@ -119,4 +119,17 @@ main {
 .space {
   width: 20px;
 }
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 600px;
+  height:425px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.carouselTxt {
+  text-align: center;
+}
+
 
