@@ -65,7 +65,7 @@ function searchcity () {
             a.append(p2);
             a.append(img);
             carousel.append(a);
-            $(".carouselTxt").append(p);
+            //$(".carouselTxt").append(p);
 
             /**
              * <div>
