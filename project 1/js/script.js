@@ -1,5 +1,6 @@
 // carousel initializing
 $(document).ready(function () {
+   
     $('.carousel').carousel();
 });
 
@@ -55,14 +56,14 @@ function searchcity () {
 
 
 
-
+            
             let p = $("<p>").text("Attractions:" + response._embedded.events[i].name);
-            let p2 = $("<p>").text(response._embedded.events[i].url);
+            //let p2 = $("<p>").text(response._embedded.events[i].url);
             activityDiv.append(p);
-            activityDiv.append(p2);
+           // activityDiv.append(p2);
             a.append(img);
             carousel.append(a);
-            $(".carouselTxt").append(p);
+            $(".carouselTkt").append(p);
 
 
         }
@@ -76,7 +77,7 @@ function searchcity () {
     )
 
 
-    // callinfg weather
+    // calling weather
     let APIKey = "27c1cb8e958edefa8e76e521738fbd32";
     let queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=imperial";
 
@@ -100,7 +101,6 @@ function searchcity () {
 $("#searchButton").on("click", function (event) { event.preventDefault; searchcity () });
 
 // src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js";
-
 
 
 

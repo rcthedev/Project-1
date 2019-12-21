@@ -63,7 +63,7 @@ footer.page-footer {
 
 .citySearch {
   font-weight: bold;
-  col s6 push-s3;
+  columns: s6 push-s3;
   
   
 }
@@ -120,7 +120,3 @@ main {
   width: 20px;
 }
 
-.carouselTxt {
-  text-align: center;
-  
-}
