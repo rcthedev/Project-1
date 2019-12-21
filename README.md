@@ -15,10 +15,10 @@ AJAX/JSON,
 Jquery,
 
 ## Team
-Robert Chavez
-Christopher Stephens
-Cesar Acosta
-Michael Madrid
+Christopher Stephens,
+Cesar Acosta,
+Michael Madrid,
+Robert Chavez, 
 
 ## About Us
 Our Vision: Provide a simple and easy to use event planer web application.
