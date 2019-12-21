@@ -1,0 +1,135 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  
+}
+body {
+  font-family: 'Kaushan Script', cursive;
+}
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+  
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.citySearch {
+  font-weight: bold;
+  columns: s6 push-s3;
+  
+  
+}
+h2 {
+  color: teal;
+  
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: teal;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: blue;
+}
+
+
+main {
+  width: 960px;
+  margin: auto;
+  padding: 0 0 10% 0;
+}
+.name {
+  display: block;
+  padding: 20px;
+  background-color: teal;
+  color: white;
+  position: relative;
+  width: 300px;
+  margin-left: 260px;
+  
+  
+}
+.box {
+  display: inline-block;
+  width: 30%;
+}
+.space {
+  width: 20px;
+}
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 600px;
+  height:425px;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.carouselTxt {
+  text-align: center;
+}
+
+

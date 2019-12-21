@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project1</title>
+</head>
+
+<body>
+
+    <!-- //Forms for user input -->
+    <!-- //things we need to complete need to be able tro save to local storage  -->
+    <!-- //search button needs to be set up with on click listener and doesn't refresh page -->
+    <!-- //load api's to html -->
+    <form class="CityWeather">
+        Search For Weather By City:<br>
+        <input type="text">
+    </form>
+    <button class="Weather">Search</button>
+    <br>
+    <form>
+        Search For Activities By City:<br>
+        <input type="text">
+
+        <!-- api key for "Google Maps 'Things To Do'" Adding created error in code-->
+        <!-- tested and received error message "google maps not activated" do we have to pay for it ?-->
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDULeBEcgoC6Tk5tEvcNxnP1onNT5Wfz5Q&callback=initMap"
+            type="text/javascript"></script>
+    </form>
+    <button class="Activities">Search</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        //Weather Search button listener
+
+        $(".Weather").on("click", function () {
+            let APIKey = "27c1cb8e958edefa8e76e521738fbd32";
+            let queryURL = "api.openweathermap.org/data/2.5/forecast?q=" + "CityWeather" + "&appid=" + APIKey;
+        });
+        <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
+
+
+    </script>
+    <div w-type="event-discovery" w-tmapikey="em8f9UG4RJ0ph3yEvrPpynKLn9b2ijAY" w-googleapikey="YOUR_GOOGLE_API_KEY"
+        w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="0"
+        w-borderradius="4" w-postalcode="" w-radius="25" w-city="Los Angeles" w-period="week" w-layout="vertical"
+        w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom"
+        w-titlelink="off" w-sorting="groupByName" w-id="id_t5951" w-countrycode="US" w-source=""
+        w-branding="Ticketmaster" w-latlong=""></div>
+
+</body>
+
+</html>
