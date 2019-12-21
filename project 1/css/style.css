@@ -9,8 +9,11 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  
 }
-
+body {
+  font-family: 'Kaushan Script', cursive;
+}
 p {
   line-height: 2rem;
 }
@@ -24,6 +27,7 @@ p {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
+  
 }
   .parallax-container .section {
     width: 100%;
@@ -50,6 +54,7 @@ p {
 }
 .icon-block .material-icons {
   font-size: inherit;
+  
 }
 
 footer.page-footer {
@@ -59,9 +64,12 @@ footer.page-footer {
 .citySearch {
   font-weight: bold;
   col s6 push-s3;
+  
+  
 }
 h2 {
   color: teal;
+  
 }
 input[type="text"],
 select,
@@ -101,6 +109,7 @@ main {
   position: relative;
   width: 300px;
   margin-left: 260px;
+  
   
 }
 .box {
