@@ -9,6 +9,7 @@ Clone from GitHub and open the code with your internet browser.
 
 ## Technologies
 Languages and libraries we used:
+Visual Studio Code, 
 Materialize,
 Javascript,
 AJAX/JSON,
