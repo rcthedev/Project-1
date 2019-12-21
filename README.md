@@ -15,6 +15,11 @@ Javascript,
 AJAX/JSON,
 Jquery,
 
+API Keys:
+Open weather, 
+Ticketmaster, 
+
+
 ## Team
 Christopher Stephens,
 Cesar Acosta,
