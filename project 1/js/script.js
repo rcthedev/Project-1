@@ -1,8 +1,11 @@
 // carousel initializing
 $(document).ready(function () {
    
-    $('.carousel').carousel();
-});
+    $('.carousel.carousel-slider').carousel(
+        {
+            fullWidth: true
+    });
+
 
 //Weather Search button listener
 
@@ -63,7 +66,7 @@ function searchcity () {
            // activityDiv.append(p2);
             a.append(img);
             carousel.append(a);
-            $(".carouselTkt").append(p);
+            $(".carouselTxt").append(p);
 
 
         }
@@ -104,3 +107,4 @@ $("#searchButton").on("click", function (event) { event.preventDefault; searchci
 
 
 
+})
