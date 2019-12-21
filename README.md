@@ -8,7 +8,7 @@ This is our first group training project. Our goal is to make an application tha
 Clone from GitHub and open the code with your internet browser. 
 
 ## Technologies
-Languages we used, and libraries:
+Languages and libraries we used:
 Materialize,
 Javascript,
 AJAX/JSON,
